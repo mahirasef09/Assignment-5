@@ -39,41 +39,44 @@
 <body class="font-lexend">
     <!-- header section start -->
     <header class="sticky top-0 left-0 w-full bg-header-bg p-6">
-            <div class="container mx-auto flex justify-between">
-                <div>
-                    <button id="blog-btn" class="btn bg-btn-color font-bold">Blog</button>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <img class="w-[48px]" src="./assets/logo.png" alt="">
-                    <h3 class="font-bold">Donate Bangladesh</h3>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <img src="./assets/coin.png" alt="">
-                    <h3 class=""><span id="balance" class="mr-2">5500</span>BDT</h3>
-                </div>
+        <div class="container mx-auto flex justify-between">
+            <div>
+                <button id="blog-btn" class="btn bg-btn-color font-bold">Blog</button>
             </div>
+            <div class="flex items-center space-x-1 lg:space-x-3">
+                <img class="w-[24px] lg:w-[48px]" src="./assets/logo.png" alt="">
+                <h3 class="font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img src="./assets/coin.png" alt="">
+                <h3 class=""><span id="balance" class="mr-1 lg:mr-2">5500</span>BDT</h3>
+            </div>
+        </div>
     </header>
     <!-- header section end -->
 
-    <main class="container mx-auto space-y-4">
+    <main class="container mx-auto space-y-8">
         <!-- btn section start -->
-        <div class="flex justify-center space-x-3 mt-8">
-            <button id="donation-btn" class="btn bg-btn-color font-bold">Donation</button>
-            <button id="history-btn" class="btn font-bold">History</button>
-        </div>
+        <section>
+            <div class="flex justify-center space-x-3 mt-8">
+                <button id="donation-btn" class="btn bg-btn-color font-bold">Donation</button>
+                <button id="history-btn" class="btn font-bold">History</button>
+            </div>
+        </section>
+
         <!-- btn section end -->
 
-        <section id="donation-section">
+        <section id="donation-section" class="space-y-8">
             <!-- donation section start -->
             <!-- Noakhali section start -->
-            <div class="flex justify-center space-x-3 border-2 rounded-lg p-6">
+            <div class="m-1 flex flex-col lg:flex-row justify-center space-x-3 border-2 rounded-lg p-6">
                 <div>
                     <img class="" src="./assets/noakhali.png" alt="">
                 </div>
-                <div class="w-1/2 space-y-5 p-4">
-                    <div class="bg-second-bg flex items-center space-x-2 border-2 rounded-lg w-1/4">
+                <div class="w-full lg:w-1/2 space-y-5 p-4">
+                    <div class="bg-second-bg flex items-center space-x-2 border-2 rounded-lg w-1/2 lg:w-1/4">
                         <img src="./assets/coin.png" alt="">
-                        <h3 class=""><span id="noakhali-amount" class="mr-2">0</span>BDT</h3>
+                        <h3 class=""><span id="noakhali-amount" class="mr-1 lg:mr-2">0</span>BDT</h3>
                     </div>
                     <h3 class="font-extrabold">Donate for Flood at Noakhali, Bangladesh</h3>
                     <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
@@ -93,14 +96,14 @@
             <!-- Noakhali section end -->
 
             <!-- Feni section start -->
-            <div class="flex justify-center space-x-3 border-2 rounded-lg p-6">
+            <div class="m-1 flex flex-col lg:flex-row justify-center space-x-3 border-2 rounded-lg p-6">
                 <div>
                     <img class="" src="./assets/feni.png" alt="">
                 </div>
-                <div class="w-1/2 space-y-5 p-4">
-                    <div class="bg-second-bg flex items-center space-x-2 border-2 rounded-lg w-1/4">
+                <div class="w-full lg:w-1/2 space-y-5 p-4">
+                    <div class="bg-second-bg flex items-center space-x-2 border-2 rounded-lg w-1/2 lg:w-1/4">
                         <img src="./assets/coin.png" alt="">
-                        <h3 class=""><span id="feni-amount" class="mr-2">600</span>BDT</h3>
+                        <h3 class=""><span id="feni-amount" class="mr-1 lg:mr-2">600</span>BDT</h3>
                     </div>
                     <h3 class="font-extrabold">Donate for Flood at Feni, Bangladesh</h3>
                     <p> The recent floods in Feni have devastated local communities, leading to severe disruption and
@@ -119,14 +122,14 @@
             <!-- Feni section end -->
 
             <!-- Quata Movement section start -->
-            <div class="flex justify-center space-x-3 border-2 rounded-lg p-6">
+            <div class="m-1 flex flex-col lg:flex-row justify-center space-x-3 border-2 rounded-lg p-6">
                 <div>
                     <img class="" src="./assets/quota-protest.png" alt="">
                 </div>
-                <div class="w-1/2 space-y-5 p-4">
-                    <div class="bg-second-bg flex items-center space-x-2 border-2 rounded-lg w-1/4">
+                <div class="w-full lg:w-1/2 space-y-5 p-4">
+                    <div class="bg-second-bg flex items-center space-x-2 border-2 rounded-lg w-1/2 lg:w-1/4">
                         <img src="./assets/coin.png" alt="">
-                        <h3 class=""><span id="quota-amount" class="mr-2">2400</span>BDT</h3>
+                        <h3 class=""><span id="quota-amount" class="mr-1 lg:mr-2">2400</span>BDT</h3>
                     </div>
                     <h3 class="font-extrabold">Aid for Injured in the Quota Movement</h3>
                     <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many
