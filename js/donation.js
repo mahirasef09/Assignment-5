@@ -28,7 +28,7 @@ document.getElementById('noakhali-btn')
 
         const div = document.createElement('div');
         div.innerHTML = `
-        <div class="space-y-3 mt-4 border-2 rounded-lg p-6">
+        <div class="space-y-3 m-4 border-2 rounded-lg p-6">
             <h3 class="font-extrabold">${number} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h3>
         </div>
             `;
@@ -70,7 +70,7 @@ document.getElementById('feni-btn')
 
         const div = document.createElement('div');
         div.innerHTML = `
-            <div class="space-y-3 mt-4 border-2 rounded-lg p-6">
+            <div class="space-y-3 m-4 border-2 rounded-lg p-6">
                 <h3 class="font-extrabold">${number} Taka is Donated for Flood Relief in Feni,Bangladesh</h3>
             </div>
             `;
@@ -111,7 +111,7 @@ document.getElementById('quota-btn')
 
         const div = document.createElement('div');
         div.innerHTML = `
-        <div class="space-y-3 mt-4 border-2 rounded-lg p-6">
+        <div class="space-y-3 m-4 border-2 rounded-lg p-6">
             <h3 class="font-extrabold">${number} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
         </div>
             `;
