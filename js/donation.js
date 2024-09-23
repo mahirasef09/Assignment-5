@@ -10,10 +10,11 @@ document.getElementById('noakhali-btn')
             return;
         }
 
-        if (number < 0) {
+        if (number <= 0) {
             alert('Failed to donate money');
             return;
         }
+        
 
         const balance = getTextValueById('balance');
         const noakhaliAmount = getTextValueById('noakhali-amount');
@@ -26,10 +27,13 @@ document.getElementById('noakhali-btn')
         const newNoakhaliAmount = noakhaliAmount + number;
         document.getElementById('noakhali-amount').innerText = newNoakhaliAmount;
 
+        const d = new Date();
+
         const div = document.createElement('div');
         div.innerHTML = `
         <div class="space-y-3 m-4 border-2 rounded-lg p-6">
             <h3 class="font-extrabold">${number} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h3>
+            <p>Date: ${d}</p>
         </div>
             `;
         document.getElementById('history-section').appendChild(div);
@@ -52,7 +56,7 @@ document.getElementById('feni-btn')
             return;
         }
 
-        if (number < 0) {
+        if (number <= 0) {
             alert('Failed to donate money');
             return;
         }
@@ -68,10 +72,13 @@ document.getElementById('feni-btn')
         const newFeniAmount = feniAmount + number;
         document.getElementById('feni-amount').innerText = newFeniAmount;
 
+        const d = new Date();
+
         const div = document.createElement('div');
         div.innerHTML = `
             <div class="space-y-3 m-4 border-2 rounded-lg p-6">
                 <h3 class="font-extrabold">${number} Taka is Donated for Flood Relief in Feni,Bangladesh</h3>
+                <p>Date: ${d}</p>
             </div>
             `;
         document.getElementById('history-section').appendChild(div);
@@ -93,7 +100,7 @@ document.getElementById('quota-btn')
             return;
         }
 
-        if (number < 0) {
+        if (number <= 0) {
             alert('Failed to donate money');
             return;
         }
@@ -109,10 +116,13 @@ document.getElementById('quota-btn')
         const newQuotaAmount = quotaAmount + number;
         document.getElementById('quota-amount').innerText = newQuotaAmount;
 
+        const d = new Date();
+
         const div = document.createElement('div');
         div.innerHTML = `
         <div class="space-y-3 m-4 border-2 rounded-lg p-6">
             <h3 class="font-extrabold">${number} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
+            <p>Date: ${d}</p>
         </div>
             `;
         document.getElementById('history-section').appendChild(div);
