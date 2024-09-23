@@ -37,9 +37,23 @@
 </head>
 
 <body class="font-lexend">
-    <header>
-
+    <!-- header section start -->
+    <header class="sticky top-0 left-0 w-full bg-header-bg p-6">
+        <div class="container mx-auto flex justify-between">
+            <div>
+                <button id="home-btn" class="btn bg-btn-color font-bold">Home</button>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-[48px]" src="/assets/logo.png" alt="">
+                <h3 class="font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img src="/assets/coin.png" alt="">
+                <h3 class=""><span id="balance" class="mr-2">5500</span>BDT</h3>
+            </div>
+        </div>
     </header>
+    <!-- header section end -->
 
     </header>
 
@@ -47,8 +61,15 @@
 
     </main>
 
-    <footer>
+    <!-- footer section start -->
+    <footer class="bg-header-bg h-16 mt-8"></footer>
+    <!-- footer section end -->
 
-    </footer>
+    <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/donation.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/blogToHome.js"></script>
 </body>
+
 </html>
