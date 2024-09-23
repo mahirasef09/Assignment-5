@@ -56,7 +56,7 @@
         </div>
         <!-- btn section start -->
         <section class="bg-white p-4">
-            <div class="flex justify-center space-x-10 mt-8">
+            <div class="flex justify-center space-x-10">
                 <button id="donation-btn" class="btn bg-btn-color font-bold">Donation</button>
                 <button id="history-btn" class="btn font-bold">History</button>
             </div>
@@ -90,7 +90,29 @@
                     <input id="noakhali-input" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered w-full" required />
                     <div class="">
-                        <button id="noakhali-btn" class="w-full btn bg-btn-color font-extrabold">Donate Now</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="noakhali-btn" class="w-full btn bg-btn-color font-extrabold" onclick="">Donate Now</button>
+                        <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box text-center space-y-3">
+                                <h3 class="text-4xl font-bold">Congrats!</h3>
+
+                                <div class="flex justify-center">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                
+                                <p class="">You have donated for humankind</p>
+                                <p class="text-xl font-bold">Successfully</p>
+
+                                <div class="flex justify-center">
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
@@ -115,9 +137,31 @@
                         difference. Please consider donating today to assist those in urgent need.</p>
                     <input id="feni-input" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered w-full" required />
-                    <div class="">
-                        <button id="feni-btn" class="w-full btn bg-btn-color font-extrabold">Donate Now</button>
-                    </div>
+                        <div class="">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button id="feni-btn" class="w-full btn bg-btn-color font-extrabold" onclick="">Donate Now</button>
+                            <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box text-center space-y-3">
+                                    <h3 class="text-4xl font-bold">Congrats!</h3>
+    
+                                    <div class="flex justify-center">
+                                        <img src="./assets/coin.png" alt="">
+                                    </div>
+                                    
+                                    <p class="">You have donated for humankind</p>
+                                    <p class="text-xl font-bold">Successfully</p>
+    
+                                    <div class="flex justify-center">
+                                        <div class="modal-action">
+                                            <form method="dialog">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn">Close confirmation</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
                 </div>
             </div>
             <!-- Feni section end -->
@@ -143,9 +187,31 @@
                         support these brave individuals in their time of need.</p>
                     <input id="quota-input" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered w-full" required />
-                    <div class="">
-                        <button id="quota-btn" class="w-full btn bg-btn-color font-extrabold">Donate Now</button>
-                    </div>
+                        <div class="">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button id="quota-btn" class="w-full btn bg-btn-color font-extrabold" onclick="">Donate Now</button>
+                            <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box text-center space-y-3">
+                                    <h3 class="text-4xl font-bold">Congrats!</h3>
+    
+                                    <div class="flex justify-center">
+                                        <img src="./assets/coin.png" alt="">
+                                    </div>
+                                    
+                                    <p class="">You have donated for humankind</p>
+                                    <p class="text-xl font-bold">Successfully</p>
+    
+                                    <div class="flex justify-center">
+                                        <div class="modal-action">
+                                            <form method="dialog">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn">Close confirmation</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
                 </div>
             </div>
             <!-- Quata Movement section end -->

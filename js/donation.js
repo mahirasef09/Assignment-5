@@ -22,12 +22,19 @@ document.getElementById('noakhali-btn')
 
 
         const newBalance = balance - number;
+
+        if (newBalance <= 0) {
+            alert('You do not have enough money to donate');
+            return;
+        }
+
         document.getElementById('balance').innerText = newBalance;
 
         const newNoakhaliAmount = noakhaliAmount + number;
         document.getElementById('noakhali-amount').innerText = newNoakhaliAmount;
 
-        const d = new Date();
+        const d = new Date(); 
+        // new Date().toLocaleString() also can be used
 
         const div = document.createElement('div');
         div.innerHTML = `
@@ -39,6 +46,10 @@ document.getElementById('noakhali-btn')
         document.getElementById('history-section').appendChild(div);
         document.getElementById('no-history').classList.add('hidden');
 
+        if (newBalance > 0) {
+            my_modal_1.showModal();
+        }
+        
     });
 
 
@@ -67,6 +78,12 @@ document.getElementById('feni-btn')
 
 
         const newBalance = balance - number;
+
+        if (newBalance <= 0) {
+            alert('You do not have enough money to donate');
+            return;
+        }
+
         document.getElementById('balance').innerText = newBalance;
 
         const newFeniAmount = feniAmount + number;
@@ -83,6 +100,11 @@ document.getElementById('feni-btn')
             `;
         document.getElementById('history-section').appendChild(div);
         document.getElementById('no-history').classList.add('hidden');
+
+        if (newBalance > 0) {
+            my_modal_2.showModal();
+        }
+
     });
 
 
@@ -111,6 +133,12 @@ document.getElementById('quota-btn')
 
 
         const newBalance = balance - number;
+
+        if (newBalance <= 0) {
+            alert('You do not have enough money to donate');
+            return;
+        }
+
         document.getElementById('balance').innerText = newBalance;
 
         const newQuotaAmount = quotaAmount + number;
@@ -127,5 +155,9 @@ document.getElementById('quota-btn')
             `;
         document.getElementById('history-section').appendChild(div);
         document.getElementById('no-history').classList.add('hidden');
+
+        if (newBalance > 0) {
+            my_modal_3.showModal();
+        }
 
     });
