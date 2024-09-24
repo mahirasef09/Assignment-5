@@ -1,3 +1,4 @@
+// Donation btn functionality
 document.getElementById('donation-btn')
     .addEventListener('click', function () {
         document.getElementById('donation-btn').classList.add('bg-btn-color');
@@ -5,6 +6,7 @@ document.getElementById('donation-btn')
         showSectionById('donation-section');
     });
 
+// History btn functionality
 document.getElementById('history-btn')
     .addEventListener('click', function () {
         document.getElementById('history-btn').classList.add('bg-btn-color');

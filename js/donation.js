@@ -1,3 +1,4 @@
+// Noakhali Donation Functionality
 document.getElementById('noakhali-btn')
     .addEventListener('click', function (event) {
         event.preventDefault();
@@ -54,7 +55,7 @@ document.getElementById('noakhali-btn')
 
 
 
-
+// Feni Donation Functionality
 document.getElementById('feni-btn')
     .addEventListener('click', function (event) {
         event.preventDefault();
@@ -109,7 +110,7 @@ document.getElementById('feni-btn')
 
 
 
-
+// Quota Donation Functionality
 document.getElementById('quota-btn')
     .addEventListener('click', function (event) {
         event.preventDefault();
